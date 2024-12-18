@@ -264,6 +264,7 @@ export class Transactions extends Component {
 			{
 				Header: 'Creator',
 				accessor: 'creator_msp_id',
+				Cell: () => 'Jio Streams', // Hardcode the value as "jiostreams"
 				filterMethod: (filter, rows) =>
 					matchSorter(
 						rows,
